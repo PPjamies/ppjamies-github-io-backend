@@ -7,15 +7,7 @@ export interface Email {
     sendCopy: boolean;
 }
 
-export interface EmailThreshold {
-    limit: number;
-    count: number;
-    date: number;
-}
-
-export interface Limiter {
+export interface Limit {
     email: string;
     count: number;
-    isBlocked: boolean;
-    dateLastBlocked: number;
 }

@@ -23,9 +23,9 @@ app.post('/contact', emailValidators, (request: Request, response: Response): vo
 
     const {firstname, lastname, email, subject, message, sendCopy} = request.body as Email;
 
-    // cache - check the email limit (users can only send 3 emails a day)
+    // meta - check the email limit (users can only send 3 emails a day)
 
-    // cache/or file - check if server has reached its maximum limit of emails per day
+    // meta/or file - check if server has reached its maximum limit of emails per day
 
     // send email
 
