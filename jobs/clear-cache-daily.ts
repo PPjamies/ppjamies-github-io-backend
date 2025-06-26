@@ -1,5 +1,5 @@
 import {setTimeout} from 'timers';
-import EmailCache from '../src/services/cacheService'
+import EmailCache from '../src/email-cache'
 
 const JOB_KICKOFF_EVERY_24_HOURS_MS = 24 * 60 * 60 * 1000;
 
@@ -16,6 +16,6 @@ function scheduleMidnightJob(job: () => void) {
 }
 
 scheduleMidnightJob(() => {
-    EmailCache.clear();    // clear in-memory cache
-    EmailCache.write();    // update disk cache
+    EmailCache.clear();
+    EmailCache.write();
 });
