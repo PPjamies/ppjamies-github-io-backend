@@ -7,7 +7,7 @@ const DAILY_LIMIT = 3;
 const DAILY_CAPACITY = 30;
 const CACHE_META_PATH: string = path.join(__dirname, '../meta/meta.json');
 
-class EmailCacheService {
+class EmailCache {
     private map = new Map<string, Limit>();
     private count = 0;
 
@@ -39,4 +39,4 @@ class EmailCacheService {
     }
 }
 
-export default new EmailCacheService();
+export default new EmailCache();
