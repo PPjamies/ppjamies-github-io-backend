@@ -1,5 +1,5 @@
 import {setTimeout} from 'timers';
-import EmailCache from '../src/email-cache'
+import EmailCache from '../src/service/email-cache-service'
 
 const JOB_KICKOFF_EVERY_24_HOURS_MS = 24 * 60 * 60 * 1000;
 

@@ -1,4 +1,4 @@
-export interface Email {
+export interface EmailRequest {
     firstname: string;
     lastname: string;
     email: string;
